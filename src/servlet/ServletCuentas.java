@@ -86,7 +86,6 @@ public class ServletCuentas extends HttpServlet {
 		    		cdao.darBaja(idCue);
 			    	
 		    	}else {
-		    		//dar de alta
 		    		try {
 			            Cliente.validarCantidadCtasCliente(IdCliente);
 			    		cdao.modificarEstadoATrueCuenta(idCue);
