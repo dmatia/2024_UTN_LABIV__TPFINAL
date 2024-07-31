@@ -76,6 +76,7 @@ public class ServletCuentas extends HttpServlet {
 	        
 	        String IdModificarEstado = request.getParameter("IdModificarEstado");
 		    String EstadoCuenta = request.getParameter("EstadoCuenta");
+	    	int IdCliente = (int) sessionIdCliente.getAttribute("IdCliente");
 			
 		    if(IdModificarEstado != null && EstadoCuenta != null) {
 		    	int idCue= Integer.parseInt(IdModificarEstado);
@@ -86,11 +87,14 @@ public class ServletCuentas extends HttpServlet {
 			    	
 		    	}else {
 		    		//dar de alta
-		    		cdao.modificarEstadoATrueCuenta(idCue);
-			    	
+		    		try {
+			            Cliente.validarCantidadCtasCliente(IdCliente);
+			    		cdao.modificarEstadoATrueCuenta(idCue);
+		    		}catch (SuperaLimiteCuentasException e) {
+			            request.setAttribute("Mensaje", e.getMessage());
+			        }
 		    	}
 		    	
-		    	int IdCliente = (int) sessionIdCliente.getAttribute("IdCliente");
 		    	
 		    	response.sendRedirect(request.getContextPath() + "/ServletCuentas?idCliente=" + IdCliente);
 		    	return;
