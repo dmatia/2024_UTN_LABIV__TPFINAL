@@ -1,0 +1,7 @@
+body{
+	background: rgba(100, 183, 183, 1);
+}
+.container {
+    background: #fff;
+	min-height: 100vh;
+}

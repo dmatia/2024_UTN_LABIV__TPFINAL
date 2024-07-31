@@ -1,0 +1,18 @@
+body {
+	min-height: 100vh;
+	background: rgba(100, 183, 183, 1);
+}
+
+.container{
+	min-height: 100vh;
+	background: #fff;
+}
+.formularioPagarPrestamo{
+	border: 2px solid #ccc;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+#detallePrestamo tr th, #detallePrestamo tr td{
+	text-align: center;
+}

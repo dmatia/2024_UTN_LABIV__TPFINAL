@@ -1,0 +1,18 @@
+html, body {
+	height: 100vh;
+	background: rgba(100, 183, 183, 1);
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+}
+
+form{
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}

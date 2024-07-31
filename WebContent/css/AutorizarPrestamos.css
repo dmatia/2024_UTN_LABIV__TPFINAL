@@ -1,0 +1,25 @@
+body {
+	min-height: 100vh;
+	background: rgba(100, 183, 183, 1);
+}
+
+.container{
+	min-height: 100vh;
+	background: #fff;
+}
+
+table.tablaPrestamos{
+	border: 1px solid #ccc;
+}
+
+th{
+	padding: 5px;
+}
+
+td{
+	text-align: center;
+}
+
+.btnFinalizar{
+	width: 100%;
+}

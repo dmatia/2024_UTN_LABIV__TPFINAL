@@ -1,0 +1,32 @@
+body {
+	min-height: 100vh;
+	background: rgba(100, 183, 183, 1);
+}
+
+.container{
+	min-height: 100vh;
+	background: #fff;
+}
+
+#prestamoForm{
+	border: 2px solid #ccc;
+	width: 100%;
+	padding: 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-size: 1.5em;
+}
+
+label[for="importeF"]{
+	text-align: left;
+	grid-column: 1 / -1; /
+}
+
+#prestamoForm label{
+	text-align: center;
+}
+
+#prestamoForm label, #prestamoForm input, #prestamoForm select{
+	margin-top: .5em;
+}
+

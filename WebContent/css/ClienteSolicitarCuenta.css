@@ -1,0 +1,40 @@
+body {
+	min-height: 100vh;
+	background: rgba(100, 183, 183, 1);
+}
+
+.container{
+	min-height: 100vh;
+	background: #fff;
+}
+
+#myTable {
+	border: 2px solid #000;
+	min-height: 80vh;
+}
+
+.encabezado {
+	padding: 5px;
+}
+
+ul li:hover {
+	font-weight: bold;
+	background: #eee;
+}
+
+#cuentaSelect {
+	margin-top: 1em;
+	font-size: 2em;
+}
+#cuerpoClienteSolicitarCuenta {
+	margin-top: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.btnSolicitarCuenta {
+	display: block;
+	font-size: 2em;
+	margin-top: 5em;
+}

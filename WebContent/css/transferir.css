@@ -1,0 +1,130 @@
+@charset "ISO-8859-1";
+header {
+  background-color: rgba(100, 183, 183, 0.500); 
+    border-radius: 80px 80px 0px 0px;
+}
+
+.encabezado {
+  text-align: center;
+  margin: 0; 
+  font-size:3rem;
+}
+
+.atras {
+  text-align: right;
+  margin: 0; 
+}
+div.parteIzq{
+	display: grid;
+    grid-template-columns: 40% 0%;
+    background-color: rgba(100, 183, 183, 0.109);
+    padding-left: 2rem;
+}
+
+.formulariotransferencia label, .formularioPrestamo label, .formularioPrestamo label, .formularioPagarPrestamo label{
+	text-align:center;
+    width: 90%;
+    font-size: 2rem;
+    }
+    
+.formularioPrestamo input, .formularioPrestamo select, .formularioPagarPrestamo input, .formularioPagarPrestamo select{
+	text-align:center;
+	width: 20%;
+    padding: 0.1rem;
+    margin-bottom: 2.5rem;
+	font-size:1rem;
+}
+
+.formulariotransferencia input, .formulariotransferencia select{
+	text-align:center;
+	width: 70%;
+    padding: 0.1rem;
+    margin-bottom: 2.5rem;
+	font-size:1rem;
+}
+
+.btnTransferir, .btnHistorial, .btnPrestamo{
+	background-color:#4CAF50;
+    border: none;
+    margin: 20px 0;
+    padding: 1.3rem;
+    border-radius: 10px;
+}
+	.btnTransferir:hover, .btnHistorial:hover,.btnPrestamo:hover{
+	background-color: rgb(0, 100, 0);
+    border: none;
+    margin: 5px 0;
+    padding: 0.7rem;
+        color: white;
+    border-radius: 10px;
+	}
+    
+   .btnPrestamo{
+   	background-color:#4CAF50;
+    border: none;
+    margin: 20px 0;
+    padding: 1.3rem;
+    border-radius: 10px;
+   
+   }
+   .btnPrestamo:hover{
+	background-color: rgb(0, 100, 0);
+    border: none;
+    margin: 5px 0;
+    padding: 0.7rem;
+        color: white;
+    border-radius: 10px;
+	}
+	 .btnHistorial{
+   	background-color:#4CAF50;
+    border: none;
+    margin: 20px 0;
+    padding: 1.3rem;
+    border-radius: 10px;
+   
+   }
+   
+   .btnHistorial:hover{
+	background-color: rgb(0, 100, 0);
+    border: none;
+    margin: 5px 0;
+    padding: 0.7rem;
+        color: white;
+    border-radius: 10px;
+	}
+	
+	.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+	}
+	
+	.modal-content {
+	    background-color: #fefefe;
+	    margin: auto;
+	    padding: 20px;
+	    border: 1px solid #888;
+	    width: 80%; 
+	}
+	
+	.close {
+	    color: #aaa;
+	    float: right;
+	    font-size: 28px;
+	    font-weight: bold;
+	}
+	
+	.close:hover,
+	.close:focus {
+	    color: black;
+	    text-decoration: none;
+	    cursor: pointer;
+	}

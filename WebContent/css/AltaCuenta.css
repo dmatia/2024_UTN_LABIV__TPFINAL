@@ -1,0 +1,46 @@
+body {
+	min-height: 100vh;
+	background: rgba(100, 183, 183, 1);
+}
+
+.container{
+	min-height: 100vh;
+	background: #fff;
+}
+
+#myTable {
+	border: 2px solid #000;
+	min-height: 80vh;
+}
+
+.encabezado {
+	padding: 5px;
+}
+
+ul li:hover {
+	font-weight: bold;
+	background: #eee;
+}
+
+
+#cuerpoClienteSolicitarCuenta  h1{
+	text-align: center;
+}
+
+
+form button{
+	margin-top: 1em;
+}
+
+label[for="cuentaSelect"]{
+	margin-top: 1em;
+}
+
+#cuentaSelect{
+	font-size: 1.2em;
+}
+
+form label{
+	font-size: 2em;
+	font-weight: 100;
+}

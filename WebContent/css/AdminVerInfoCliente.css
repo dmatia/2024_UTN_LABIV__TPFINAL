@@ -1,0 +1,76 @@
+body {
+	min-height: 100vh;
+	background: rgba(100, 183, 183, 1);
+}
+
+.container{
+	min-height: 100vh;
+	background: #fff;
+}
+
+.contenedorInfo{
+	border: 2px solid black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: "infoUser infoUser infoUser infoUser infoUser"
+						 "idUsuario idCliente spana spanb spanc"
+						 "infoPerson infoPerson infoPerson infoPerson infoPerson"
+						 "NombreApellido NombreApellido FechaNac DNI CUIL "
+						 "Sexo Nacionalidad spane spanf spang"
+						 "Direccion Localidad Localidad Provincia Provincia "
+						 "Telefono correo correo spank spanl";
+}
+
+.contenedorInfo div{
+	text-align: center;
+	padding: 1em;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+}
+
+.infoUser{
+	grid-area: infoUser;
+}
+.idCliente{
+	grid-area: idCliente;
+}
+.idUsuario{
+	grid-area: idUsuario;
+}
+.infoPerson{
+	grid-area: infoPerson;
+}
+.dni{
+    grid-area: DNI;
+}
+.cuil{
+    grid-area: CUIL;
+}
+.nombreapellido{
+    grid-area: NombreApellido;
+}
+.sexo{
+    grid-area: Sexo;
+}
+.nacionalidad{
+    grid-area: Nacionalidad;
+}
+.fechanac{
+    grid-area: FechaNac;
+}
+.direccion{
+    grid-area: Direccion;
+}
+.localidad{
+    grid-area: Localidad;
+}
+.provincia{
+    grid-area: Provincia;
+}
+.email{
+    grid-area: correo;
+}
+.telefono{
+    grid-area: Telefono;
+}

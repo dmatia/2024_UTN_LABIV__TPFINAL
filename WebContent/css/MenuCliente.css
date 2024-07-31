@@ -1,0 +1,52 @@
+body {
+	background: rgba(100, 183, 183, 1);
+}
+.container {
+    background: #fff;
+	min-height: 100vh;
+}
+.links {
+  text-align: right;
+  padding: 10px;
+  background: #fff;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+a{
+  margin-right: 10px;
+}
+
+h1{
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+}
+
+h2{
+  margin-bottom: 5%;
+}
+
+.botones button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px 20px;
+}
+
+.botones{
+  margin-bottom: 5%;
+}
+
+.menu {
+  text-align: center;
+  background: #fff;
+  margin-right: 20%;
+  margin-left: 20%;
+  height: 100%;
+}
+
+.botones button {
+  margin: 5px;
+}
