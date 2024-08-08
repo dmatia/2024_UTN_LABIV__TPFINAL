@@ -64,18 +64,20 @@ $(document).ready(function (){
 						sesi&oacute;n</a></li>
 			</ul>
 		</div>
+		
+		<h1 class="display-4 text-center text-uppercase">Movimientos del cliente</h1>
 
 <%
 
 ArrayList<Movimientos> listaMovimientos = null;
+
 if (request.getAttribute("listaM") != null) {
 	listaMovimientos = (ArrayList<Movimientos>) request.getAttribute("listaM");
-}
+    if (!listaMovimientos.isEmpty()) {
 
 
 
 %>
-<h1 class="display-4 text-center text-uppercase">Movimientos del cliente</h1>
 <div class="d-flex justify-content-around"> 
 <span class="text-uppercase">Filtrar por </span>
 
@@ -118,12 +120,13 @@ if (request.getAttribute("listaM") != null) {
 </tr>
 </thead>
 
-<tbody>
+
 <%
 
-    if (listaMovimientos != null) {
+
         for (Movimientos movimiento : listaMovimientos) {
 %>
+<tbody>
 <tr>
     <td><%= movimiento.getMovimientosID() %></td>
     <td><%= movimiento.getNumeroCuenta() %></td>
@@ -133,21 +136,34 @@ if (request.getAttribute("listaM") != null) {
     <td><%= movimiento.getDetalleMov() %></td>
     <td><%= movimiento.getImporte_Mov() %></td>
 </tr>
-<% 
-        } 
-    }
 
-%>
 </tbody>
 
+<% 
+        } 
+%>
 </table>
 
 </div>
+  <%  }else{
+    	%>
+
+    	<p class="h2 text-center text-uppercase">El cliente no tiene movimientos registrados.</p>
+    	
+<%
+}
+}
+%>
 
 <form method="get" action="ServletMovimientos" class="text-center">
     <button class="btn btn-primary text-center" type="submit" name="btnVolver" value="1">Volver al listado</button>
 </form>
 <%
+				}
+else{ %>
+<h1> No hay usuario en sesi&oacute;n</h1>
+<a class="h2" href="Index.jsp">Iniciar sesi&oacute;n</a>
+<% 
 }%>
 </div>
 
