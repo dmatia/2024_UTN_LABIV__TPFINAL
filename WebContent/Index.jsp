@@ -12,28 +12,23 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div>
-                    <h1 class="text-center">Bienvenido</h1>
-                    <form method="post" action="ServletLogin">
-                        <div class="form-group row">
-                            <label for="user" class="col-sm-3 col-form-label">Usuario:</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" id="usuario" name="usuario" required>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="password" class="col-sm-3 col-form-label">Contrase&ntilde;a:</label>
-                            <div class="col-sm-9">
-                                <input type="password" class="form-control" id="contrasenia" name="contrasenia" required>
-                            </div>
-                        </div>
-                        <div class="form-group row mt-4">
-                            <div class="col-sm-12 text-right">
-                                <input type="submit" class="btn btn-primary" name="btnLogin" value="Ingresar">
-<!--                                 <p>Ingresar con usuario: admin</p> -->
-<!--                                 <p>Ingresar con contraseña: admin</p> -->
-                            </div>
-                        </div>
-                    </form>
+                <img class="login-logo" alt="banco-logo" src="assets/banco-logo-verde.png">
+                    <h1 class="text-center text-uppercase">Bienvenido</h1>
+                            <form method="post" action="ServletLogin" class="text-center">
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" class="form-control mx-auto" id="usuario" name="usuario" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contrasenia">Contraseña</label>
+                    <input type="password" class="form-control mx-auto" id="contrasenia" name="contrasenia" required>
+                </div>
+                
+                <div class="form-group mt-4">
+                    <input type="submit" class="btn btn-primary w-100" name="btnLogin" value="Ingresar">
+                </div>
+            </form>
                     <% if (request.getAttribute("Mensaje") != null) { %>
         			<div class="alert alert-danger" role="alert">
             		<%= request.getAttribute("Mensaje") %>
