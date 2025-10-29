@@ -124,6 +124,12 @@ public class ServletPrestamos extends HttpServlet {
 							}
 							prestamoNegocio.actualizarPrestamo(p);
 							
+							Cuentas cuentas = p.getCuentaDelCliente();
+							
+							CuentasNegocio cuentaNegocio = new CuentasNegocioImplement();
+							cuentaNegocio.actualizarSaldoCuenta(cuentas.getNumeroCuenta_Cue(), (cuentas.getSaldo()+p.getImporteSoli()));
+							
+							
 						} else {
 							mensaje = "No se pudo aprobar el préstamo";
 						}

@@ -29,16 +29,17 @@
 			</ul>
 
 </div>
-<h1 class="display-1 text-uppercase text-center">Men&uacute; principal</h1>
 
-   
-            <a class="btn btn-primary btn-lg w-100 p-3 mt-1" href="AltaUsuario.jsp">Alta Clientes</a>
-            <a class="btn btn-primary btn-lg w-100 p-3 mt-1" href="ServletCliente?Param=1">Listar Clientes</a>
-            <a class="btn btn-primary btn-lg w-100 p-3 mt-1" href="ServletMovimientos?TodosMovimientos=1">Movimientos</a>
-            <a class="btn btn-primary btn-lg w-100 p-3 mt-1" href="AdminAltaCuenta.jsp">Agregar Cuenta a Cliente</a>
-            <a class="btn btn-primary btn-lg w-100 p-3 mt-1" href="Reportes.jsp">Reportes</a>
-            <a class="btn btn-primary btn-lg w-100 p-3 mt-1" href="ServletPrestamos">Autorizar Prestamos</a>
 
+   <div class="opcionesAdmin">
+   <h1 class="menuAdminTitulo">Men&uacute; principal</h1>
+            <a class="" href="AltaUsuario.jsp">Alta Clientes</a>
+            <a class="" href="ServletCliente?Param=1">Listar Clientes</a>
+            <a class="" href="ServletMovimientos?TodosMovimientos=1">Movimientos</a>
+            <a class="" href="AdminAltaCuenta.jsp">Agregar Cuenta a Cliente</a>
+            <a class="" href="Reportes.jsp">Reportes</a>
+            <a class="" href="ServletPrestamos">Autorizar Prestamos</a>
+	</div>
 </div>
 <% }else {
     response.sendRedirect("Index.jsp"); // Redirigir a la página de inicio de sesión si no hay usuario en la sesión
